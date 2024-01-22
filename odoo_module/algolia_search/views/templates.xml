@@ -1,0 +1,37 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="algolia_search_template" name="Algolia Search">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <div class="oe_website_sale">
+                        <!-- Search Bar -->
+                        <div id="search-bar" class="search-bar">
+                            <input type="text" class="form-control" placeholder="Search products..." />
+                        </div>
+
+                        <!-- Search Results -->
+                        <div id="search-results" class="search-results">
+                            <!-- Results will be populated dynamically by algolia_search.js -->
+                        </div>
+
+                        <!-- Faceted Search Filters -->
+                        <div id="faceted-search" class="faceted-search">
+                            <h3>Filter by:</h3>
+                            <div id="filter-category" class="filter-option">
+                                <h4>Category</h4>
+                                <!-- Categories will be populated dynamically by algolia_search.js -->
+                            </div>
+                            <div id="filter-price" class="filter-option">
+                                <h4>Price</h4>
+                                <!-- Price ranges will be populated dynamically by algolia_search.js -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
+```

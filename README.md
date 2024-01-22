@@ -1,1 +1,0 @@
-# Algolia-Odoo-V16-CE---1.0

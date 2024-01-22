@@ -1,0 +1,25 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="algolia_search">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products..." />
+        </div>
+        <div class="search-results" id="search-results">
+            <!-- Search results will be appended here by algolia_search.js -->
+        </div>
+        <div class="filter-options">
+            <div class="filter-option" id="filter-category">
+                <label>Category:</label>
+                <select id="category-select">
+                    <!-- Categories will be appended here by algolia_search.js -->
+                </select>
+            </div>
+            <div class="filter-option" id="filter-price">
+                <label>Price:</label>
+                <input type="range" id="price-range" min="0" max="1000" />
+            </div>
+        </div>
+    </t>
+</templates>
+```
