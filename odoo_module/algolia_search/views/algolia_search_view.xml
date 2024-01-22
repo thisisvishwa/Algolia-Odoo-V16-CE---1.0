@@ -1,0 +1,36 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Algolia Search View -->
+        <record id="view_algolia_search_form" model="ir.ui.view">
+            <field name="name">algolia.search.form</field>
+            <field name="model">algolia.search</field>
+            <field name="arch" type="xml">
+                <form string="Algolia Search">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="algolia_app_id"/>
+                            <field name="algolia_api_key"/>
+                            <field name="index_name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Algolia Search Action -->
+        <record id="action_algolia_search" model="ir.actions.act_window">
+            <field name="name">Algolia Search</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">algolia.search</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_algolia_search_form"/>
+        </record>
+
+        <!-- Algolia Search Menu -->
+        <menuitem id="menu_algolia_search" name="Algolia Search" parent="base.menu_administration" action="action_algolia_search"/>
+    </data>
+</odoo>
+```

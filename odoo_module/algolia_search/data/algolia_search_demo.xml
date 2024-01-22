@@ -1,0 +1,14 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Demo data for Algolia Search -->
+        <record id="algolia_search_demo" model="algolia.search">
+            <field name="name">Algolia Demo Search</field>
+            <field name="algolia_app_id">YourAlgoliaAppID</field>
+            <field name="algolia_api_key">YourAlgoliaAPIKey</field>
+            <field name="index_name">YourIndexName</field>
+        </record>
+    </data>
+</odoo>
+```

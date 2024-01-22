@@ -1,0 +1,43 @@
+/* algolia_search.css */
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-result {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-option {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-option.active {
+    background-color: #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        font-size: 14px;
+    }
+
+    .search-result {
+        font-size: 14px;
+    }
+
+    .filter-option {
+        font-size: 12px;
+    }
+}
